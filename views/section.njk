@@ -1,5 +1,8 @@
 {% extends "./layouts/default.njk" %}
 {% block content %}
+  <header>
+      {% include "partials/topics.njk" %}
+  </header>
   <section class="section">
     {% for teaser in content.articles %}
       {% include "partials/teaser.njk" %}

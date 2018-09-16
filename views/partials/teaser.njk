@@ -12,12 +12,11 @@
       </h1>
     </a>
     <p class="teaser__published">{{ teaser.publishedAt | dateFormat }}</p>
+    {% if teaser.source and teaser.source.name %}
+      <a class="teaser__source" href="//{{ teaser.source.name }}" rel="author">{{ teaser.source.name }}</a>
+    {% endif %}
     <p>
       {{ teaser.description }}
     </p>
   </div>
-
-  {% if teaser.source and teaser.source.name %}
-     <a class="teaser__source" href="//{{ teaser.source.name }}" rel="author">{{ teaser.source.name }}</a>
-  {% endif %}
 </article>
