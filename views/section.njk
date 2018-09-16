@@ -1,0 +1,11 @@
+{% extends "./layouts/default.njk" %}
+{% block content %}
+  <section class="section">
+    {% for teaser in content.articles %}
+      {% include "partials/teaser.njk" %}
+    {% endfor %}
+  </section>
+  {% include "partials/pagination.njk" %}
+
+{% endblock %}
+

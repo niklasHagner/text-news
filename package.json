@@ -1,0 +1,58 @@
+{
+  "name": "text-news",
+  "version": "0.0.1",
+  "description": "simple server-rendered news",
+  "main": "app.js",
+  "homepage": "https://github.com/niklasHagner/text-news",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:niklasHagner/text-news"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "scripts": {
+    "dev": "npm run build && npm run watch",
+    "lint": "npm run lint:scss && npm run lint:js",
+    "lint:scss": "sass-lint -v",
+    "lint:js": "eslint . --cache",
+    "build:sass": "node-sass -w -r assets/styles/ -o public/styles/",
+    "build": "npm run build:sass && npm run lint",
+    "build:dev": "cross-env NODE_ENV=development npm run build",
+    "watch": "npm run watch:scripts & npm run watch:styles",
+    "watch:dev": "cross-env NODE_ENV=development npm run watch",
+    "start": "node app"
+  },
+  "author": "Niklas Hagner",
+  "license": "UNLICENSED",
+  "private": false,
+  "dependencies": {
+    "exp-asynccache": "^1.2.1",
+    "exp-config": "^2.0.1",
+    "exp-fetch": "^2.0.1",
+    "express": "^4.16.3",
+    "log": "^1.4.0",
+    "moment": "^2.22.2",
+    "morgan": "^1.9.0",
+    "nunjucks": "^3.1.3",
+    "striptags": "^3.1.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.1.3",
+    "chronokinesis": "^2.0.0",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.4.0",
+    "node-sass": "^4.9.3",
+    "node-sass-magic-importer": "^5.2.0",
+    "sass-lint": "^1.12.1",
+    "youch": "^2.0.9"
+  },
+  "files": [
+    "config",
+    "lib",
+    "app.js",
+    ".eslintrc",
+    ".eslintignore",
+    ".nvmrc"
+  ]
+}

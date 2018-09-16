@@ -1,0 +1,8 @@
+{
+  "log": "stdout",
+  "logLevel": "debug",
+  "requestLogging": "stdout",
+  "viewCaching": false,
+  "parseEsi": false,
+  "apiUrl": "https://newsapi.org/v2/"
+}
