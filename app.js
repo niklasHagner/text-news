@@ -1,6 +1,5 @@
 "use strict";
 
-// In app.js
 const logger = require("./lib/logger.js");
 const packageInfo = require("./package.json");
 const setupApp = require("./lib/init/setupApp.js");
