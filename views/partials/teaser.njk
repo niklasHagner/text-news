@@ -4,19 +4,16 @@
       <img src="{{ teaser.urlToImage }}">
     {% endif %}
   </div>
-
-  <div class="teaser__content">
-    <a href="{{ teaser.url }}">
-      <h1 class="teaser__title">
-        {{ teaser.title }}
-      </h1>
-    </a>
-    <p class="teaser__published">{{ teaser.publishedAt | dateFormat }}</p>
-    {% if teaser.source and teaser.source.name %}
-      <a class="teaser__source" href="//{{ teaser.source.name }}" rel="author">{{ teaser.source.name }}</a>
-    {% endif %}
-    <p>
-      {{ teaser.description }}
-    </p>
-  </div>
+  <a class="teaser__title" href="{{ teaser.url }}">
+    <h1>
+      {{ teaser.title }}
+    </h1>
+  </a>
+  <p class="teaser__published">{{ teaser.publishedAt | dateFormat }}</p>
+  {% if teaser.source and teaser.source.name %}
+    <a class="teaser__source" href="//{{ teaser.source.name }}" rel="author">{{ teaser.source.name }}</a>
+  {% endif %}
+  <p>
+    {{ teaser.description }}
+  </p>
 </article>
