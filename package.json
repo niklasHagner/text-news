@@ -35,6 +35,8 @@
     "moment": "^2.24.0",
     "morgan": "^1.9.1",
     "nunjucks": "^3.2.0",
+    "pino": "^5.13.5",
+    "split2": "^3.1.1",
     "striptags": "^3.1.1"
   },
   "devDependencies": {
