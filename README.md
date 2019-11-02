@@ -1,5 +1,15 @@
 # Simple news feed
 
-a simple, serverside-rendered news feed without all the fuzz
+serverside-rendered news feed without any fuzz
 
+tech:
+* node
+* nunjucks
+
+run this project:
+1. npm i
+2. node app.js
+3. browse to localhost:3000
+
+screenshot:
 ![screenshot](https://i.imgur.com/EMMKqrP.png)
