@@ -37,7 +37,7 @@
     "nunjucks": "^3.2.0",
     "pino": "^5.13.5",
     "split2": "^3.1.1",
-    "striptags": "^3.1.1"
+    "striptags": "^3.2.0"
   },
   "devDependencies": {
     "autoprefixer": "^9.7.1",
